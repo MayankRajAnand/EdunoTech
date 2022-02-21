@@ -1,0 +1,241 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+#FirstPage{
+    background-color: #111828;
+}
+nav{
+    font-size: 14px;
+}
+.left ,.right{
+    width:45vw;
+}
+.right{
+    margin-left:5%;
+}
+
+.parent{
+    width:330px;
+    height:35px;
+    background-color: black;
+    border-radius: 50px;
+    position:relative;
+    font-size: 14px;;
+    margin-left:5%;
+    margin-top: 12%;
+  
+}
+.child{
+    width:120px;
+    height:22px;
+    background-color: #0d9dab;
+    border-radius: 50px;
+}
+.head{
+    font-size: 3.5rem;
+}
+.para{
+    width:90%;
+    font-size: 1.3rem;
+}
+::placeholder{
+    padding-left: 10px !important;
+}
+.icon{
+   
+    position: absolute;
+    left:38%;
+    top:-20px;
+    
+
+   
+}
+.card{
+    background-color: #f9fafc;
+   border:none;
+   box-shadow: 1px 1px 1px rgb(236, 232, 232);
+}
+.card p{
+    color:gray
+}
+
+#thirdPage{
+    height:80vh;
+}
+.green{
+    height:60vh;
+    background-color: #0fa5ad;
+}
+
+#FourthPage .container{
+    width:50%;
+    margin: auto;
+ }
+:root {
+    --color-text: hsl(248, 10%, 40%);
+    --color-text-muted: hsl(248, 10%, 40%);
+    --color-green: #0fa5ad;
+    --footer-bg: #1c2444;
+    --color: #f2f3fb;
+    --color-smooth: #9da2ae;
+    --input-border: #3a456a;
+    --btn-bg-color: #f1f2fc;
+    --btn-hover-bg: #d5d9f6;
+    --btn-color: #1e2641;
+  }
+  
+ 
+.accordion__caption{
+    font-weight: 700;
+}
+  
+  .accordion {
+    width: 42rem;
+    padding: 1.2rem 0;
+    border-radius: 1rem;
+    background: white;
+    margin:auto;
+  /*   box-shadow: 0 0 5rem lightgrey; */
+  }
+  
+  .accordion__heading {
+    margin-bottom: 1rem;
+    padding: 0 1.4rem;
+  }
+  
+  .accordion__item:not(:last-child) {
+    border-bottom: 1px solid lightgrey;
+  }
+  
+  .accordion__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    background: white;
+    border: none;
+    outline: none;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  .accordion__btn:hover {
+    color: var(--color-green);
+    background: hsl(248, 53%, 97%);
+  }
+  
+  .accordion__item--active .accordion__btn {
+    color: var(--color-green);
+    border-bottom: 2px solid var(--color-green);
+    background: hsl(248, 53%, 97%);
+  }
+  
+  .fa-lightbulb {
+    padding-right: 1rem;
+  }
+  .accordion__icon {
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;
+    opacity: 0.9;
+  }
+  .accordion__item--active .accordion__icon {
+    transform: rotate(180deg);
+  }
+  
+  .accordion__content {
+    font-weight: 300;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    color: var(--color-text-muted);
+    transform: translateX(16px);
+    transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+  }
+  .accordion__content p {
+    padding: 1rem 1.8rem;
+  }
+  
+  .accordion__item--active .accordion__content {
+    opacity: 1;
+    transform: translateX(0px);
+    max-height: 100vh;
+  }
+  
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 600px) {
+    nav .collapse ul {
+        text-align: center;
+        color:red
+    }
+    form button{
+        visibility:hidden;
+    }
+    form a{
+         margin-left:50% ;
+    }
+    .head{
+        margin:0;
+        padding:0;
+        font-size: 2rem;
+    }
+    .para{
+        padding:0;
+        margin:0;
+        font-size: 13px;;
+    }
+    .parent{
+        width:260px;
+        font-size: 12px;;
+        padding:0;
+        margin:0;
+    }
+    .child{
+        width:90px;
+        text-transform: lowercase;
+        padding:0;
+        margin:0;
+    }
+    .left{
+        width:100%;
+    }
+    .right{
+        display:none;
+    }
+    
+    .buttons input{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .tc{
+        width:90%;
+        font-size: 12px !important;;
+    }
+    #thirdPage{
+        height:auto;
+    }
+    .green{
+        height:auto;
+        position:static !important;
+    }
+    .green img{
+        position:static !important; 
+    }
+    
+    
+    #FourthPage{
+        width:auto;
+        height:auto;
+        font-size: 14px;;
+        padding:0;
+        margin:0;
+    }
+  }
