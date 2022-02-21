@@ -65,6 +65,7 @@ nav{
 
 #thirdPage{
     height:80vh;
+    
 }
 .green{
     height:60vh;
@@ -220,16 +221,10 @@ nav{
         font-size: 12px !important;;
     }
     #thirdPage{
-        height:auto;
-    }
-    .green{
-        height:auto;
-        position:static !important;
-    }
-    .green img{
-        position:static !important; 
-    }
     
+        display:none;
+    }
+   
     
     #FourthPage{
         width:auto;
